@@ -88,3 +88,22 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [Setting up Continuous Integration]: https://www.jhipster.tech/documentation-archive/v5.3.1/setting-up-ci/
 
 
+## 如何使用phabricator做code review
+如何避免arc diff玷污现有节点
+创建专用于评审的分支
+
+git branch review
+git checkout review
+arc diff <xxx> 或 arc diff --preview <xxx> //创建评审单或预审单（到pha网站上进行下一步的操作，可用于ubuntu下不能自动补全人名的环境）
+git checkout master
+git branch -D review //评审单一旦创建，review分支就没有存在的必要性了
+如何创建只包含部分文件的评审单
+可能只希望评审方案文件（假设： design.md），但commit中包含相关的图片、svg、等文件，不需要提交到pha，如下处理：
+
+git branch review <oneOldCommit> //从 design.md 创建或修改前的节点创建一个分支
+git checkout review
+git checkout master design.md //将master分支上的 design.md check 到 review 分支
+git commit -am "review for design.md"
+arc diff HEAD^ 或 arc diff --preview HEAD^
+git checkout master
+git branch -D review
