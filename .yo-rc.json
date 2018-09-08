@@ -1,0 +1,27 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.magfin.demo"
+    },
+    "jhipsterVersion": "5.3.1",
+    "applicationType": "monolith",
+    "baseName": "demo",
+    "packageName": "com.magfin.demo",
+    "packageFolder": "com/magfin/demo",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YWEyMjM5N2ZjOWM1M2QxZjg5OTdlNzY0MDhlN2I2ZDFlZmFmMTkzZDgzMzI5NjM4MDMxYWI1OTQ4YWVhYTkyNDYyMWU3YzNkNDcyNjk0NDdhYjIyM2VmNTQ0YTEzZTI3MGNjODE5N2VhZmY1MjUwZWI2ZGUwZjE2ZjMyODFjZWM=",
+    "enableTranslation": false
+  }
+}
