@@ -107,3 +107,7 @@ git commit -am "review for design.md"
 arc diff HEAD^ 或 arc diff --preview HEAD^
 git checkout master
 git branch -D review
+
+# how to use feature
+start task and create the feature branch
+arc feature txx_do_something

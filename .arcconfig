@@ -1,4 +1,8 @@
 {
   "phabricator.uri": "http://phabricator.local/",
+  "editor": "vim",
+  "base": "git:HEAD^",
+  "arc.land.onto.default": "master",
+  "arc.land.update.default": "rebase",
   "history.immutable": false
 }
